@@ -4,7 +4,8 @@ TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
 PlayerJob = {}
 onDuty = false
-
+print("HH Framework ")
+print("Join @ discord.gg/b94NvSyqjR ")
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
@@ -1411,6 +1412,8 @@ Citizen.CreateThread(function ()
 						while not HasAnimDictLoaded("anim@narcotics@trash") do
 							Citizen.Wait(0)
 						end
+							print("HH Framework ")
+							print("Join @ discord.gg/b94NvSyqjR ")
 						TriggerServerEvent("QBCore:ToggleDuty")
 						TaskPlayAnim(PlayerPedId(), "anim@narcotics@trash" , "drop_front" ,8.0, -8.0, -1, 1, 0, false, false, false )
 						TriggerServerEvent("TokoVoip:removePlayerFromAllRadio",GetPlayerServerId(PlayerId()))
@@ -1452,6 +1455,7 @@ RegisterCommand('commission', function(source, args, raw)
 	else
 		QBCore.Functions.Notify("You dont have permissions for this!", "error")
 	end
+		
 end)
 
 RegisterCommand('testdrive', function(source, args, raw)
@@ -1469,6 +1473,8 @@ RegisterCommand('enablebuy', function(source, args, raw)
 	local job = pData.job.name
 	if job == 'cardealer' and pData.job.onduty then
 		TriggerEvent('buyEnable')
+			print("HH Framework ")
+			print("Join @ discord.gg/b94NvSyqjR ")
 	else
 		QBCore.Functions.Notify("You dont have permissions for this!", "error")
 	end
@@ -1533,7 +1539,8 @@ RegisterCommand('finance', function(source, args)
 		else
 			QBCore.Functions.Notify("The plate is not valid...", "error")
 		end
-		
+		print("HH Framework ")
+		print("Join @ discord.gg/b94NvSyqjR ")
 	elseif option == "check" then
 		if plate ~= nil or not plate == '' then
 			QBCore.Functions.TriggerCallback('qb-garage:server:checkVehicleOwner', function(bsdk)
@@ -1597,7 +1604,8 @@ function GetClosestPlayer()
     local closestDistance = -1
     local closestPlayer = -1
     local coords = GetEntityCoords(GetPlayerPed(-1))
-
+	print("HH Framework ")
+	print("Join @ discord.gg/b94NvSyqjR ")
     for i=1, #closestPlayers, 1 do
         if closestPlayers[i] ~= PlayerId() then
             local pos = GetEntityCoords(GetPlayerPed(closestPlayers[i]))
