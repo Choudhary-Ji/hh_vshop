@@ -4,8 +4,7 @@ TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
 PlayerJob = {}
 onDuty = false
-print("HH Framework ")
-print("Join @ discord.gg/b94NvSyqjR ")
+
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
@@ -14,6 +13,8 @@ AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
 	PlayerJob = PlayerData.job
 	onDuty = PlayerData.job.onduty
 	Citizen.Wait(2000)
+		print("HH Framework ")
+		print("Join @ discord.gg/b94NvSyqjR ")
 	TriggerServerEvent("lund:CheckFinanceStatus")
 end)
 
