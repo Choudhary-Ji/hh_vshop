@@ -19,6 +19,8 @@ AddEventHandler('carshop:table', function(table)
         carTable = table
         TriggerClientEvent('veh_shop:returnTable', -1, carTable)
         updateDisplayVehicles()
+			print("HH Framework ")
+			print("Join @ discord.gg/b94NvSyqjR ")
     end
 end)
 
@@ -97,6 +99,8 @@ AddEventHandler('lundlele:server:SaveCar', function(mods, vehicle, hash, plate, 
     local Player = QBCore.Functions.GetPlayer(src)
     local date = os.date('%Y-%m-%d')
     if financed then
+			print("HH Framework ")
+			print("Join @ discord.gg/b94NvSyqjR ")
         local repayTime = 168 -- Hours
         local downPay = math.ceil(price / 3)
         QBCore.Functions.ExecuteSql(false, "SELECT * FROM `player_vehicles` WHERE `plate` = '"..plate.."'", function(result)
